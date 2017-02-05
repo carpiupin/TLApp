@@ -1,0 +1,23 @@
+regex = "^(https|http):\/\/www\.amazon\.es\/(dp\/)?[^/]*/(
+dp\/\\w{10}|
+\\w{10}|
+product\/\\w{10}|
+product\/glance\/\\w{10}|
+[^/]\/\\w{10}
+)"
+
+regex = "^(https|http):\/\/www\.amazon\.es\/(dp\/)?[^/]*/(dp\/\\w{10}|\\w{10}|product\/\\w{10}|product\/glance\/\\w{10}|dp\/.*\/\\w{10})"
+
+url1= https://www.amazon.es/<cualquier_cosa>/dp/<ASIN>
+url2= https://www.amazon.es/dp/<cualquier_cosa>/<ASIN>
+url3= https://www.amazon.es/<cualquier_cosa>/<ASIN>
+url4= https://www.amazon.es/gp/product/<ASIN>
+url5= https://www.amazon.es/gp/product/glance/<ASIN>
+url6= https://www.amazon.es/<cualquier_cosa>/dp/<cualquier_cosa>/<ASIN>
+
+url1= "https://www.amazon.es/canal@ofertazas/dp/B0182BRESY?qweqweqwe"
+url2= "https://www.amazon.es/dp/canal@ofertazas/B0182BRESY?qweqweqweqww"
+url3= "https://www.amazon.es/<SEO>/B0182BRESY?qweqwe"
+url4= "https://www.amazon.es/gp/product/B0182BRESY?qweqwe"
+url5= "https://www.amazon.es/gp/product/glance/B0182BRESY?qweqwe"
+url6= "https://www.amazon.es/canal@ofertazas/dp/canal@ofertazas/B0182BRESY?qwewqw"
