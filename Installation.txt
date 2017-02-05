@@ -2,6 +2,6 @@ install lua: apt-get install lua-lgi libjson-glib-dev
 
 
 Aux:
-from netcatPython import Netcat; nc = Netcat('127.0.0.1', 1234); nc.getHistory('@Ofertos')
+from netcatPython import Netcat; nc = Netcat('127.0.0.1', 1234); nc.getHistory('<channel_username>')
 
 
